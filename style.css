@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav{
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 16px;
+    background: #fff;
+
+}
+
+header{
+    background: #fff;
+    height: calc(100vh - 70px);
+    padding: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home__description{
+    width: 50%;
+}
+
+.logo{
+    width: 200px;
+}
+
+.row{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+a{
+    color: rgb(32, 30, 30);
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+
+}
+
+ul{
+    display: flex;
+}
+
+li{
+    list-style-type: none;
+    padding-left: 16px;
+}
+
+.furniture{
+    border: 2px solid gold;
+    padding: 8px 16px;
+    border-radius: 2px;
+}
+
+.text__color{
+    color: #05c7cf;
+}
+
+h1{
+    font-size: 56px;
+    font-weight: 500;
+}
+
+
+
+.subheader{
+    font-size: 26px;
+   
+    margin: 16px 0 24px 0;
+}
+
+button{
+    background-color: #05c7cf;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#about, #discord, #contact, footer{
+    padding: 24px 0;
+}
+
+/* 
+
+ABOUT
+
+*/
+
+
+
+#about{
+
+    background-color: #f8ffdc;
+}
+
+.section__description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.section__description--wrapper{
+    width: 40%;
+}
+
+.about__img--wrapper{
+    width: 60%;
+
+}
+
+.section__description--para{
+    font-size: 22px;
+    line-height: 1.5;
+    margin-bottom: 24px;
+    width: 100%;
+    
+}
+
+.about__img--wrapper, .section__description--para{
+    padding: 0 24px;
+}
+
+img{
+width: 100%;
+}
+
+h2{
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 26px;
+}
+
+/* 
+
+DISCORD
+
+*/
+
+#discord{
+    
+background-color: #cefeff;
+}
+
+
+/* 
+
+CONTACT
+
+*/
+
+#contact{
+    background-color: #fff;
+}
+
+form{
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 0 24px;
+
+}
+
+input, textarea{
+margin-bottom: 24px;
+font-size: 20px;
+padding: 6px 12px;
+}
+
+.sub__button{
+    width: 120px;
+    border-radius: 8px;
+    margin: 0 auto;
+}
+
+
+
+/* 
+
+Footer
+
+*/
+
+footer{
+background-color: #aaf5ff;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.footer__logo{
+    max-width: 480px;
+}
+
+.footer__links{
+    margin-bottom: 14px;
+}
+
+.gazed{
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+@media (max-width: 720px) {
+    .row{
+        flex-direction: column;
+    }
+
+    .home__description{
+        margin-bottom: 24px;
+        display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .home__description--btn{
+        max-width: 240px;
+    }
+
+    h1{
+        text-align: center;
+        font-size: 50px;
+    }
+
+    header .row{
+        height: 100%;
+    }
+    
+
+    header{
+        height: 80%;
+    }
+
+    .sub__header{
+        text-align: center;
+        font-size: 18px;
+    }
+
+    ul{
+        display: none;
+    }
+
+    .section__description{
+        flex-direction: column;
+    }
+
+    .section__description--wrapper{
+        width: 100%;
+    }
+
+    .about__img--wrapper{
+        width: 100%;
+    }
+
+    #discord .section__description{
+        flex-direction: column-reverse;
+    }
+
+    footer{
+        padding: 48px 24px;
+    }
+
+    .footer__logo{
+        max-width: 300px;
+    }
+}
